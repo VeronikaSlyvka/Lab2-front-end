@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Лаб 2</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            font-size: 25px; 
+            width: 800px;
+            height: 150px;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 2px solid black;  
+        }
+        td{
+            height: 40px;
+        }
+
+        tr:first-child td {
+            background-color: #148f8f;
+            color: #ffe6e6;
+        }
+        tr:nth-child(2) td {
+            background-color: #f5f514;
+            color: #1F0638;
+        }
+
+        tr:first-child:hover td {
+            background-color: #ffe6e6;
+            color: #148f8f;
+        }
+        tr:nth-child(2):hover td {
+            background-color: #1F0638;
+            color: #f5f514;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2" rowspan="2">Сливка</td>
+            <td colspan="2">Вероніка</td>
+            <td colspan="2" rowspan="2">Віталіївна</td>
+        </tr>
+        <tr>
+            <td colspan="2">ІС-33</td>
+            <td colspan="2">Лаб-2 Варіант 144</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+
+
+    <div class="task2">
+        <div class="crosshair-position">
+            <div class="vertical-line"></div>
+            <div class="horizontal-line"></div>
+            <div class="inner-circle"></div>
+            <div class="center-dot"></div>
+        </div>
+
+    <!-- <div class="crosshair-transform">
+        <div class="lines-container">
+            <div class="line vertical-line"></div>
+            <div class="line horizontal-line"></div>
+        </div>
+        <div class="inner-circle"></div>
+        <div class="center-dot"></div>
+    </div> -->
+
+<div class="crosshair-transform">
+  <div class="vertical-line"></div>
+  <div class="horizontal-line"></div>
+  <div class="inner-circle"></div>
+  <div class="center-dot"></div>
+</div>
+
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+        .task2 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            justify-content: flex-start;
+            margin-left: 100px;
+            min-height: 100vh;
+            gap: 200px;
+        }
+
+        .crosshair-position {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .crosshair-position .inner-circle {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .crosshair-position .center-dot {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: black;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+
+        .crosshair-position .vertical-line {
+            position: absolute;
+            width: 10px;
+            height: 320px;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
+
+        .crosshair-position .horizontal-line {
+            position: absolute;
+            width: 320px;
+            height: 10px;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
+
+
+/* .crosshair-transform {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.crosshair-transform .vertical-line {
+    position: absolute;
+    width: 10px;
+    height: 320px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; 
+}
+
+.crosshair-transform .horizontal-line {
+    position: absolute;
+    width: 320px;
+    height: 10px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+
+.crosshair-transform .inner-circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.crosshair-transform .center-dot {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+} */
+
+.crosshair-transform {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center; /* центр контейнера */
+}
+
+.crosshair-transform .vertical-line {
+  width: 10px;
+  height: 320px;
+  background-color: black;
+  transform: translate(0, 0);
+}
+
+.crosshair-transform .horizontal-line {
+  width: 320px;
+  height: 10px;
+  background-color: black;
+  transform: translate(0, 0);
+}
+
+.crosshair-transform .inner-circle {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(0, 0);
+}
+
+.crosshair-transform .center-dot {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(0, 0);
+}
+
+
+
+    
